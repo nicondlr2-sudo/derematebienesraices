@@ -924,6 +924,33 @@ footer {
   .form-row { grid-template-columns: 1fr; }
   footer { padding: 2rem 1.25rem; }
   .footer-content { flex-direction: column; align-items: flex-start; }
+
+  .casos-grid {
+    width: 100%;
+    max-width: 100%;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .caso-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 1.35rem;
+    box-sizing: border-box;
+  }
+
+  .caso-numbers {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .caso-numbers {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* ANIMACIONES ENTRADA */
